@@ -1,30 +1,47 @@
+<script setup>
+
+import { onMounted, ref } from 'vue';
+import PageLoader from './components/pageLoader.vue';
+
+const isLoading=ref(true)
+onMounted(()=>{
+  setTimeout(()=>{
+    isLoading.value=false;
+  }, 12000)
+})
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <PageLoader v-if="isLoading"></PageLoader>
+  <router-view v-if="isLoading==false" />
 </template>
 
 <style>
+@import url(./assets/index.css);
+* {
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #f6aa8c; */
+  color: #0c221d;
+  background-color: #a6a9b3;
 }
 
 nav {
-  padding: 30px;
+  height: 8vh;
+  padding: 1vh 0;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #0a1011;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #0a1011;
 }
 </style>
