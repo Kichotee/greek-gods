@@ -31,7 +31,7 @@
 			</h2>
 		</div>
 	</div>
-	<!-- <meetGods /> -->
+	<meetGods />
 </template>
 
 <script setup>

@@ -23,11 +23,12 @@ gsap.registerPlugin(TextPlugin)
 onMounted(()=>{
     const tl = gsap.timeline({})
     tl.from('.loader-page',{
-        y:'-150%',
+        
         opacity:0,
+        delay:1,
         duration:2,
-    }).to('.loader-page',{
-        y:'150%',
+    },'<').to('.loader-page',{
+        
         delay:10,
         duration:4,
         
@@ -35,8 +36,7 @@ onMounted(()=>{
     gsap.to('.loading-text', {
         text:'this showcase is sponsored by prometheus',
         duration:7,
-        repeat:-1,
-        yoyo:true
+        
         
     }, )
     
