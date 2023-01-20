@@ -1,5 +1,5 @@
 <template>
-	<div class="home">
+	<div class="home" id="home">
 		<h2 class="title">The Gods of old</h2>
 		<div class="home-content">
 			<div class="img-header-box">
@@ -19,7 +19,7 @@
 			<div class="img-header-box-3">
 				<img
 					class="ares"
-					src="../assets/images/Ares-Rome-National-Roman-Museum.webp"
+					src="../assets/images/Apollo-Belvedere-copy-original-Roman-Leochares-Greek.webp"
 					alt=""
 				/>
 			</div>
@@ -32,11 +32,13 @@
 		</div>
 	</div>
 	<meetGods />
+  <Pantheon></Pantheon>
 </template>
 
 <script setup>
 	// @ is an alias to /src
 	import meetGods from "@/components/meetGods.vue";
+import Pantheon from "@/components/pantheon.vue";
 	import gsap from "gsap";
 	import { onMounted } from "vue";
 

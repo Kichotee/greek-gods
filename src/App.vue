@@ -12,8 +12,23 @@ onMounted(()=>{
 </script>
 
 <template>
-  <PageLoader v-if="isLoading"></PageLoader>
-  <router-view v-if="isLoading==false" />
+  <!-- <PageLoader v-if="isLoading"></PageLoader> -->
+  <div class="" >
+    <aside>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Pantheon</a>
+          </li>
+          <li>
+            <a href="#gods">Olympus</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <router-view  />
+  </div>
+
 </template>
 
 <style>
@@ -29,8 +44,19 @@ onMounted(()=>{
   /* color: #f6aa8c; */
   color: #0c221d;
   background-color: #a6a9b3;
+  transition: 1s all;
 }
-
+aside{
+  position: fixed;
+  width: 10%;
+  height: 60%;
+  bottom: 30%;
+  z-index: 50;
+  right:5%
+}
+li{
+  list-style-type: none;
+}
 nav {
   height: 8vh;
   padding: 1vh 0;
@@ -38,7 +64,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #0a1011;
+  color: #121212;
 }
 
 nav a.router-link-exact-active {

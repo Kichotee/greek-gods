@@ -1,4 +1,9 @@
 body{
     background-color: #a6a9b3;
-    transition:all 0.5s
+    transition:all 0.5s;
+    scroll-behavior:smooth;
 }
+/* *{
+    transition:all 0.5s
+
+} */
