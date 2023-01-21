@@ -1,7 +1,12 @@
+@font-face {
+    font-family: roxette;
+    src: url(../assets/Roxete.ttf);
+}
 body{
     background-color: #a6a9b3;
-    transition:all 0.5s;
+    transition: 0.5s;
     scroll-behavior:smooth;
+    overflow-x: hidden
 }
 /* *{
     transition:all 0.5s

@@ -94,7 +94,7 @@ gsap.defaults({duration:2})
     })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .gods{
     height: 100vh;
     background-color: #a6a9b3;
@@ -153,9 +153,14 @@ p{
     width: 100%;
     color:#fdfdfd;
     padding:0.5em;
+    font-family: roxette;
+    font-size: 1.5em;
+    text-decoration:underline ;
+
 }
 p:nth-of-type(2){
     color: #121212;
 }
+@import url(../assets/scss/_mobile.scss);
 
 </style>

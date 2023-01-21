@@ -12,8 +12,8 @@ onMounted(()=>{
 </script>
 
 <template>
-  <!-- <PageLoader v-if="isLoading"></PageLoader> -->
-  <div class="" >
+  <PageLoader v-if="isLoading"></PageLoader>
+  <div class="" v-else>
     <aside>
       <nav>
         <ul>
@@ -63,6 +63,8 @@ nav {
 }
 
 nav a {
+  font-family: roxette;
+  letter-spacing: .5em;
   font-weight: bold;
   color: #121212;
 }

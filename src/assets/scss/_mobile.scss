@@ -1,0 +1,19 @@
+@media screen and (max-width:650px) {
+    .home{
+        height:max-content
+    }
+    .home-content{
+         display:flex;
+     flex-direction: column; 
+
+}
+    .img-header-box{
+        display: none;
+    }
+    .gods{
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}

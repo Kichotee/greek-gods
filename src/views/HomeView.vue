@@ -38,7 +38,7 @@
 <script setup>
 	// @ is an alias to /src
 	import meetGods from "@/components/meetGods.vue";
-import Pantheon from "@/components/pantheon.vue";
+import Pantheon from "@/components/homes.vue";
 	import gsap from "gsap";
 	import { onMounted } from "vue";
 
@@ -96,11 +96,7 @@ import Pantheon from "@/components/pantheon.vue";
 		});
 </script>
 
-<style scoped>
-	@font-face {
-		font-family: roxette;
-		src: url(../assets/Roxete.ttf);
-	}
+<style lang="scss" scoped>
 	.home {
 		height: 100vh;
 		overflow: hidden;
@@ -167,4 +163,6 @@ import Pantheon from "@/components/pantheon.vue";
 		text-align: left;
 		font-family: roxette;
 	}
+	@import url(../assets/scss/_mobile.scss);
+
 </style>
