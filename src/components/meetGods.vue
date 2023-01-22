@@ -9,9 +9,13 @@
                         <img id="gods" src="../assets/images/Ares-Rome-National-Roman-Museum.webp" alt="">
                     </div>
                 </transition>
-            <p>
-                Ares was the god of bloodlust. (His half-sister Athena represented the more "noble" aspects of combat and civil conduct during war.) Though his fellow deities weren’t particularly fond of him, the Spartans had no problems, er, donating some prisoners of war to his worship. And sacrificing dogs…yeah, that’s right, Ares liked dead puppies
-            </p>
+                <div class="god-info">
+                    <h2>Ares</h2>
+
+                    <p>
+                        Ares was the god of bloodlust. (His half-sister Athena represented the more "noble" aspects of combat and civil conduct during war.) Though his fellow deities weren’t particularly fond of him, the Spartans had no problems, er, donating some prisoners of war to his worship. And sacrificing dogs…yeah, that’s right, Ares liked dead puppies
+                    </p>
+                </div>
         </div>
         </div>
         <div class="box box-2">
@@ -19,9 +23,13 @@
             <div class="img-box">
                 <img src="../assets/images/Athena.webp" alt="">
             </div>
-            <p>
-                Athena was the goddess of reason, wisdom, and war. She famously sprung fully formed from the forehead of Zeus. A major figure in the Odyssey, in which she instructed Odysseus, she also guided Perseus and Heracles through their trials. The Parthenon was her chief temple in Athens, which is named in her honor. 
-            </p>
+            <div class="god-info">
+                <h2>Athena</h2>
+
+                <p>
+                    Athena was the goddess of reason, wisdom, and war. She famously sprung fully formed from the forehead of Zeus. A major figure in the Odyssey, in which she instructed Odysseus, she also guided Perseus and Heracles through their trials. The Parthenon was her chief temple in Athens, which is named in her honor. 
+                </p>
+            </div>
         </div>
         </div>
         <div class="box box-3">
@@ -29,9 +37,13 @@
             <div class="img-box">
                 <img src="../assets/images/Dionysus.webp" alt="">
             </div>
-            <p>
-                Dionysus was a son of Zeus born to a mortal mother. When Zeus accidentally killed her, he sewed the young Dionysus into his thigh and, when the young god emerged, passed him to the care of the maenads. The cult of Dionysus revolved around intoxication, sex, and savage ritual sacrifice. He was often symbolized by a bull due to his association with the sacrificial animal. Elements of his character are seen in the Roman god of wine, Bacchus.
-            </p>
+            <div class="god-info">
+                <h2>Dionysus</h2>
+                <p>
+                    Dionysus was a son of Zeus born to a mortal mother. When Zeus accidentally killed her, he sewed the young Dionysus into his thigh and, when the young god emerged, passed him to the care of the maenads. The cult of Dionysus revolved around intoxication, sex, and savage ritual sacrifice. He was often symbolized by a bull due to his association with the sacrificial animal. Elements of his character are seen in the Roman god of wine, Bacchus.
+                </p>
+
+            </div>
         </div>
         </div>
     </div>
@@ -146,7 +158,7 @@ img{
     object-fit: contain;
     
 }
-p{
+.god-info{
     align-self: center;
     text-align: left;
     flex-basis: 50%;
